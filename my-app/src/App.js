@@ -6,6 +6,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Naturepedia</h1>
+        <div>
+          <button>Data</button>
+          <button>Contact Us</button>
+          <button>Home</button>
+          <button>FAQ</button>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
         <img src={graph} className="Test image"/>
         <p>
