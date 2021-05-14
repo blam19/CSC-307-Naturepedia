@@ -4,4 +4,4 @@ Dimitrije Kostic
 Kenneth Liu
 
 Style Guide: 
-https://google.github.io/styleguide/jsguide.html
+https://eslint.org/docs/user-guide/getting-started
