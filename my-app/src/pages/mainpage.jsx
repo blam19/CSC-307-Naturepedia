@@ -13,10 +13,10 @@ const MainPage = () => {
                 <div>
                     {/* <button>Data</button> */}
                     {/* <button>Contact Us</button> */}
-                    <Link to="/data"> Data </Link>
-                    <Link to="/contact"> Contact Us </Link>
-                    <Link to="/"> Home </Link>
-                    <Link to="/faq"> FAQ </Link>
+                    <Link to="/data">Data</Link>&nbsp;
+                    <Link to="/contact">Contact Us</Link>&nbsp;
+                    <Link to="/">Home</Link>&nbsp;
+                    <Link to="/faq">FAQ</Link>
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
                 </div>

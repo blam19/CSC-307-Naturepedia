@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import graph from './test.png'
 import './App.css';
 
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Link,
-  Redirect
+  Switch
 } from "react-router-dom"
 
 //Pages
