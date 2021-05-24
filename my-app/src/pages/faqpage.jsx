@@ -1,8 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-
 import { Link } from "react-router-dom";
-
 
 function donateClick(){
     alert("Thank you for donating!");
@@ -11,6 +9,16 @@ function donateClick(){
 const FAQPage = () => {
     return (
         <div>
+            <div>
+                    {/* <button>Data</button> */}
+                    {/* <button>Contact Us</button> */}
+                    <Link to="/">Home</Link>&nbsp;
+                    <Link to="/data">Data</Link>&nbsp;
+                    <Link to="/contact">Contact Us</Link>&nbsp;
+                    <Link to="/faq">Donate</Link>
+                    {/* <button>Home</button>
+                    <button>FAQ</button> */}
+            </div>
             <h1>DONATE PAGE</h1>
             <div class= "heading">
                 Please consider donating to help fund our site.
@@ -58,7 +66,17 @@ const FAQPage = () => {
                 />
             </form>
             <p></p>
-            <Button as="input" type="submit" value="DONATE" onClick={donateClick}/>
+            <Button as="input" type="submit" value="Donate $1" onClick={donateClick}/>
+            <Button as="input" type="submit" value="Donate $5" onClick={donateClick}/>
+            <Button as="input" type="submit" value="Donate $10" onClick={donateClick}/>
+            <br/>
+            <p>
+                <Button as="input" type="submit" value="Donate Custom Amount" onClick={donateClick}/>
+                <input
+                    type='text'
+                    name='donationamount'
+                />
+            </p>
         </div>
     );
 }
