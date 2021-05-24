@@ -1,0 +1,33 @@
+{
+  "name": "csc-307-naturepedia",
+  "version": "1.0.0",
+  "description": "Brandon Lam\r Bailey Wilson\r Dimitrije Kostic\r Kenneth Liu",
+  "main": "index.js",
+  "dependencies": {
+    "@devexpress/dx-react-chart": "^2.7.5",
+    "@devexpress/dx-react-chart-material-ui": "^2.7.5",
+    "@devexpress/dx-react-core": "^2.7.5",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "chart.js": "^3.2.1",
+    "react-chartjs-2": "^3.0.3",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blam19/CSC-307-Naturepedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blam19/CSC-307-Naturepedia/issues"
+  },
+  "homepage": "https://github.com/blam19/CSC-307-Naturepedia#readme"
+}

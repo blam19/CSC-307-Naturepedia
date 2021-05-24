@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../logo.svg';
 import graph from '../test.png'
 
 import { Link } from "react-router-dom";
@@ -13,29 +12,16 @@ const MainPage = () => {
                 <div>
                     {/* <button>Data</button> */}
                     {/* <button>Contact Us</button> */}
+                    <Link to="/">Home</Link>&nbsp;
                     <Link to="/data">Data</Link>&nbsp;
                     <Link to="/contact">Contact Us</Link>&nbsp;
-                    <Link to="/">Home</Link>&nbsp;
-                    <Link to="/faq">FAQ</Link>
+                    <Link to="/faq">FAQ</Link>&nbsp;
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
                 </div>
-
-                <img src={logo} className="App-logo" alt="logo" />
+                <p></p>
                 <img src={graph} className="Test image" />
 
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
             </header>
         </div>
     );

@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 import person from '../person.jpg';
 
@@ -11,8 +12,8 @@ function Bailey(){
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: 20 }}>
             <div> I am Bailey</div> 
             <div> I am Brandon</div> 
-            <div> I am Dim</div>
-            <div> I am Ken</div>
+            <div> I am Dimitrije</div>
+            <div> I am Kenneth</div>
 
             <div> Email: bailbail@Naturepedia.com</div>
             <div> Email: branbran@Naturepedia.com</div>
@@ -37,18 +38,19 @@ function Images(){
 const ContactPage = () => {
     return (
         <div>
-            <h3>CONTACT PAGE</h3>
+            <h3 style={{ fontSize: 50 }}>CONTACT PAGE</h3>
             <div>
                     {/* <button>Data</button> */}
                     {/* <button>Contact Us</button> */}
+                    <Link to="/">Home</Link>&nbsp;
                     <Link to="/data">Data</Link>&nbsp;
                     <Link to="/contact">Contact Us</Link>&nbsp;
-                    <Link to="/">Home</Link>&nbsp;
                     <Link to="/faq">FAQ</Link>
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
             </div>
             <div>
+                <p></p>
                 <Images></Images>
             </div>
             <div>
