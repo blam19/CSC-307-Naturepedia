@@ -5,15 +5,31 @@ import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 
 import person from '../person.jpg';
+import kenprofile from '../kennethprofile.jpg';
+import brandonprofile from '../brandonprofile.jpg';
+import baileyprofile from '../baileyprofile.jpg';
+import dimprofile from '../dimprofile.jpg';
 
 function Bailey(){
     return(
         <div className="Bailey">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: 20 }}>
-            <div> I am Bailey</div> 
-            <div> I am Brandon</div> 
-            <div> I am Dimitrije</div>
-            <div> I am Kenneth</div>
+            <h1>
+                Bailey Wilson
+            </h1>
+            <h1>
+                Brandon Lam
+            </h1>
+            <h1>
+                Dimitrije Kostic
+            </h1>
+            <h1>
+                Kenneth Liu
+            </h1>
+            <div> I am Bailey, a 4th year Business student at Cal Poly. I enjoy sleeping. </div> 
+            <div> I am Brandon, a 4th year Computer Engineering student at Cal Poly. I enjoy eating. </div> 
+            <div> I am Dimitrije, a 4th year Computer Engineering student at Cal Poly. I enjoy playing basketball.</div>
+            <div> I am Kenneth, a 4th year Computer Engineering student at Cal Poly. I enjoy walking.</div>
 
             <div> Email: bailbail@Naturepedia.com</div>
             <div> Email: branbran@Naturepedia.com</div>
@@ -27,10 +43,10 @@ function Bailey(){
 function Images(){
     return(
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: 20 }}>
-            <img src={person} className="Bails"/>
-            <img src={person} className="Brandon"/>
-            <img src={person} className="Dim" />
-            <img src={person} className="Kenneth" />
+            <img src={baileyprofile} className="Bails" width="200" height="200"/>
+            <img src={brandonprofile} className="Brandon" width="200" height="200"/>
+            <img src={dimprofile} className="Dim" width="200" height="200"/>
+            <img src={kenprofile} className="Kenneth" width="200" height="200"/>
         </div>
     )
 }
@@ -45,7 +61,7 @@ const ContactPage = () => {
                     <Link to="/">Home</Link>&nbsp;
                     <Link to="/data">Data</Link>&nbsp;
                     <Link to="/contact">Contact Us</Link>&nbsp;
-                    <Link to="/faq">FAQ</Link>
+                    <Link to="/faq">Donate</Link>
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
             </div>

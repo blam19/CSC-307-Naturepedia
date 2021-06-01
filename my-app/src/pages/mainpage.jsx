@@ -1,5 +1,4 @@
 import React from "react";
-import graph from '../test.png'
 
 import { Link } from "react-router-dom";
 
@@ -20,7 +19,6 @@ const MainPage = () => {
                     <button>FAQ</button> */}
                 </div>
                 <p></p>
-                <img src={graph} className="Test image" />
 
             </header>
         </div>
