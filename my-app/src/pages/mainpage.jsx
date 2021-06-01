@@ -14,7 +14,7 @@ const MainPage = () => {
                     <Link to="/">Home</Link>&nbsp;
                     <Link to="/data">Data</Link>&nbsp;
                     <Link to="/contact">Contact Us</Link>&nbsp;
-                    <Link to="/faq">FAQ</Link>&nbsp;
+                    <Link to="/faq">Donate</Link>&nbsp;
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
                 </div>
