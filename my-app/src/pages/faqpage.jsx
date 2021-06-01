@@ -20,6 +20,17 @@ const FAQPage = () => {
                     <button>FAQ</button> */}
             </div>
             <h1>DONATE PAGE</h1>
+            <div>
+                    {/* <button>Data</button> */}
+                    {/* <button>Contact Us</button> */}
+                    <Link to="/">Home</Link>&nbsp;
+                    <Link to="/data">Data</Link>&nbsp;
+                    <Link to="/contact">Contact Us</Link>&nbsp;
+                    <Link to="/faq">Donate</Link>
+                    {/* <button>Home</button>
+                    <button>FAQ</button> */}
+            </div>
+            <p/>
             <div class= "heading">
                 Please consider donating to help fund our site.
             </div>
@@ -39,7 +50,7 @@ const FAQPage = () => {
                     type='text'
                     name='email'
                 />
-                <h2>Billing Information</h2>
+                <h3>Billing Information</h3>
                 <p>Enter name on card</p>
                 <input
                     type='text'
