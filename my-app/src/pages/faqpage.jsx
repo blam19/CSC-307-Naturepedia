@@ -73,11 +73,12 @@ const FAQPage = () => {
             <br/>
             <p/>
             <p>
-                <Button as="input" type="submit" variant="outline-dark" value="Donate Custom Amount" onClick={donateClick}/>
+                Donate Custom Amount:
                 <input
                     type='text'
                     name='donationamount'
                 />
+                <Button as="input" type="submit" variant="outline-dark" value="Submit" onClick={donateClick}/>
             </p>
         </div>
     );
