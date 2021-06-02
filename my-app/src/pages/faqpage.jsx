@@ -67,12 +67,13 @@ const FAQPage = () => {
                 />
             </form>
             <p></p>
-            <Button as="input" type="submit" value="Donate $1" onClick={donateClick}/>
-            <Button as="input" type="submit" value="Donate $5" onClick={donateClick}/>
-            <Button as="input" type="submit" value="Donate $10" onClick={donateClick}/>
+            <Button as="input" type="submit" variant="outline-dark" value="Donate $1" onClick={donateClick} />
+            <Button as="input" type="submit" variant="outline-dark" value="Donate $5" onClick={donateClick}/>
+            <Button as="input" type="submit" variant="outline-dark" value="Donate $10" onClick={donateClick}/>
             <br/>
+            <p/>
             <p>
-                <Button as="input" type="submit" value="Donate Custom Amount" onClick={donateClick}/>
+                <Button as="input" type="submit" variant="outline-dark" value="Donate Custom Amount" onClick={donateClick}/>
                 <input
                     type='text'
                     name='donationamount'
