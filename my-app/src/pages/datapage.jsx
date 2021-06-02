@@ -52,6 +52,45 @@ const honey_prod_lbs = {
     ]
 }
 
+const chickens = {
+  labels: ['2002', '2007'],
+  datasets: [
+    {
+      label: 'Chicken Production (Heads)',
+      backgroundColor: 'rgba(233, 212, 96, 1)',
+      borderColor: 'rgba(0,0,0,1)',
+      borderWidth: 2,
+      data: [879758, 1032546]
+    }
+  ]
+}
+
+const chickenInventory = {
+labels: ['1997', '2002', '2007', '2012', '2017'],
+  datasets: [
+    {
+      label: 'Chicken Inventory (By End of December)',
+      backgroundColor: 'rgba(247, 202, 24, 1)',
+      borderColor: 'rgba(0,0,0,1)',
+      borderWidth: 2,
+      data: [111988, 202902, 2128, 3375, 12753]
+    }
+  ]
+}
+
+const roosterInventory = {
+labels: ['2012', '2017'],
+  datasets: [
+    {
+      label: 'Rooster Inventory (By End of December)',
+      backgroundColor: 'rgba(244, 208, 63, 1)',
+      borderColor: 'rgba(0,0,0,1)',
+      borderWidth: 2,
+      data: [1876, 3914]
+    }
+  ]
+}
+
 const DataPage = () => {
     const [curState, setCurState] = useState(coffee_us)
 
@@ -90,6 +129,12 @@ const DataPage = () => {
             <Dropdown.Item onClick={() => setCurState(honey_prod_lbs)}> Honey Production Lbs</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Honey Production Lbs per Colony</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Colony Loss per Year</Dropdown.Item>
+          </DropdownButton>
+
+          <DropdownButton id="dropdown-basic-button" title="Chickens">
+            <Dropdown.Item onClick={() => setCurState(chickens)}> Chicken Population</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(chickenInventory)}> Chicken Inventory</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(roosterInventory)}> Rooster Inventory</Dropdown.Item>
           </DropdownButton>
 
       </ButtonGroup> 
