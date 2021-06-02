@@ -185,20 +185,6 @@ const honeycrisp_apple_sales_dollar = {
   ]
 }
 
-const cows = {
-  labels: ['January', 'February', 'March',
-           'April', 'May'],
-  datasets: [
-    {
-      label: 'Cow Population',
-      backgroundColor: 'rgba(75,192,192,1)',
-      borderColor: 'rgba(0,0,0,1)',
-      borderWidth: 2,
-      data: [57, 90, 34, 59, 56]
-    }
-  ]
-}
-
 const DataPage = () => {
     const [curState, setCurState] = useState(coffee_us)
 
@@ -222,21 +208,16 @@ const DataPage = () => {
             
       <ButtonGroup>
           <DropdownButton id="dropdown-basic-button" title="Coffee">
-            <Dropdown.Item onClick={() => setCurState(coffee_us)}> U.S Coffee Production</Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(coffee_CA)}> California Coffee Production</Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(coffee_PR)}> Puerto Rico Coffee Production</Dropdown.Item>
-          </DropdownButton>
-
-          <DropdownButton id="dropdown-basic-button" title="Cows">
-            <Dropdown.Item onClick={() => setCurState(cows)}> Cow population</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(coffee_us)}> U.S Coffee Production (Lbs)</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(coffee_CA)}> California Coffee Production (Lbs)</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(coffee_PR)}> Puerto Rico Coffee Production (Lbs)</Dropdown.Item>
           </DropdownButton>
 
           <DropdownButton id="dropdown-basic-button" title="Honey">
-            <Dropdown.Item onClick={() => setCurState(honey_prod_lbs)}> US Honey Production (lbs)</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Item onClick={() => setCurState(honey_prod_lbs)}> Honey Production (Lbs)</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Honey Production (Lbs per Colony)</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Colony Loss (Lbs)</Dropdown.Item>
+            <Dropdown.Item href="#/action-4">Colony Growth (Lbs)</Dropdown.Item>
           </DropdownButton>
 
           <DropdownButton id="dropdown-basic-button" title="Milk">
@@ -246,15 +227,15 @@ const DataPage = () => {
           </DropdownButton>
 
           <DropdownButton id="dropdown-basic-button" title="Chickens">
-            <Dropdown.Item onClick={() => setCurState(chickens)}> Chicken Population</Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(chickenInventory)}> Chicken Inventory</Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(roosterInventory)}> Rooster Inventory</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(chickens)}> Chicken Population (Heads)</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(chickenInventory)}> Chicken Inventory (Heads)</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(roosterInventory)}> Rooster Inventory (Heads)</Dropdown.Item>
           </DropdownButton>
 
           <DropdownButton id="dropdown-basic-button" title="Apples">
-            <Dropdown.Item onClick={() => setCurState(braeburn_apple_sales_dollar)}> U.S. Organic Braeburn Apple Sales in Dollars</Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(fuji_apple_sales_dollar)}> U.S. Organic Fuji Apple Sales in Dollars </Dropdown.Item>
-            <Dropdown.Item onClick={() => setCurState(honeycrisp_apple_sales_dollar)}> U.S. Organic Honeycrisp Apple Sales in Dollars </Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(braeburn_apple_sales_dollar)}> U.S. Organic Braeburn Apple Sales ($)</Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(fuji_apple_sales_dollar)}> U.S. Organic Fuji Apple Sales ($) </Dropdown.Item>
+            <Dropdown.Item onClick={() => setCurState(honeycrisp_apple_sales_dollar)}> U.S. Organic Honeycrisp Apple Sales ($) </Dropdown.Item>
           </DropdownButton>
 
       </ButtonGroup> 
