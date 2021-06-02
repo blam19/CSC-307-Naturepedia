@@ -1,4 +1,6 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import {
   BrowserRouter as Router,
@@ -12,8 +14,10 @@ import MainPage from './pages/mainpage';
 import DataPage from './pages/datapage';
 import FAQPage from './pages/faqpage';
 
+
 function App() {
   return (
+    <div>
     <Router>
         <Switch>
           <Route exact path="/" component={MainPage} />
@@ -23,6 +27,7 @@ function App() {
           
         </Switch>
       </Router>
+      </div>
     // <div className="App">
       
     //   <header className="App-header">

@@ -1,12 +1,17 @@
 body {
     text-align: center;
     background-color: lightblue;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* .Bailey {
     background-color: lightgreen;
 } */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 img {
     display: block;

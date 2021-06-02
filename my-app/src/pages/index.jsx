@@ -9,12 +9,14 @@ import kenprofile from '../kennethprofile.jpg';
 import brandonprofile from '../brandonprofile.jpg';
 import baileyprofile from '../baileyprofile.jpg';
 import dimprofile from '../dimprofile.jpg';
+import { CenterFocusStrong } from "@material-ui/icons";
+import Card from "react-bootstrap/Card";
 
 function Bailey(){
     return(
         <div className="Bailey">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: 20 }}>
-            <h1>
+            {/* <h1>
                 Bailey Wilson
             </h1>
             <h1>
@@ -34,7 +36,59 @@ function Bailey(){
             <div> Email: bailbail@Naturepedia.com</div>
             <div> Email: branbran@Naturepedia.com</div>
             <div> Email: dimdim@Naturepedia.com</div>
-            <div> Email: kenken@Naturepedia.com</div>   
+            <div> Email: kenken@Naturepedia.com</div> */}
+            <div className="profile">
+                <Card border='dark' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={baileyprofile} />
+                    <Card.Body>
+                        <Card.Title>Bailey Wilson</Card.Title>
+                        <Card.Text>
+                        I am Bailey, a 4th year Business student at Cal Poly. I enjoy sleeping.
+                        </Card.Text>
+                        <Button variant="primary">bailbail@Naturepedia.com</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+            
+            <div className="profile"> 
+                <Card border='dark' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={brandonprofile} />
+                    <Card.Body>
+                        <Card.Title>Brandon Lam</Card.Title>
+                        <Card.Text>
+                        I am Brandon, a 4th year Computer Engineering student at Cal Poly. I enjoy eating.
+                        </Card.Text>
+                        <Button variant="primary">branbran@Naturepedia.com</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+
+            <div className="profile"> 
+                <Card border='dark' style={{ width: '18rem'}}>
+                    <Card.Img variant="top" src={dimprofile} />
+                    <Card.Body>
+                        <Card.Title>Dimitrije Kostic</Card.Title>
+                        <Card.Text>
+                        I am Dimitrije, a 4th year Computer Engineering student at Cal Poly. I enjoy playing basketball.
+                        </Card.Text>
+                        <Button variant="primary">dimdim@Naturepedia.com</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+
+            <div className="profile"> 
+                <Card border='dark' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={kenprofile} />
+                    <Card.Body>
+                        <Card.Title>Kenneth Liu</Card.Title>
+                        <Card.Text>
+                        I am Kenneth, a 4th year Computer Engineering student at Cal Poly. I enjoy walking.
+                        </Card.Text>
+                        <Button variant="primary">kenken@Naturepedia.com</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+               
         </div>
       </div>
     )
@@ -67,7 +121,7 @@ const ContactPage = () => {
             </div>
             <div>
                 <p></p>
-                <Images></Images>
+                {/* <Images></Images> */}
             </div>
             <div>
                 <Bailey></Bailey>

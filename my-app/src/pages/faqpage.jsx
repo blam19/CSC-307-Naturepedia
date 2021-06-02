@@ -9,16 +9,6 @@ function donateClick(){
 const FAQPage = () => {
     return (
         <div>
-            <div>
-                    {/* <button>Data</button> */}
-                    {/* <button>Contact Us</button> */}
-                    <Link to="/">Home</Link>&nbsp;
-                    <Link to="/data">Data</Link>&nbsp;
-                    <Link to="/contact">Contact Us</Link>&nbsp;
-                    <Link to="/faq">Donate</Link>
-                    {/* <button>Home</button>
-                    <button>FAQ</button> */}
-            </div>
             <h1>DONATE PAGE</h1>
             <div>
                     {/* <button>Data</button> */}
