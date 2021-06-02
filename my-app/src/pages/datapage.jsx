@@ -176,6 +176,7 @@ const DataPage = () => {
             <Dropdown.Item onClick={() => setCurState(honey_prod_lbs)}> Honey Production Lbs</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Honey Production Lbs per Colony</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Colony Loss per Year</Dropdown.Item>
+            <Dropdown.Item href="#/action-4">Colony Growth per Year</Dropdown.Item>
           </DropdownButton>
 
           <DropdownButton id="dropdown-basic-button" title="Chickens">
