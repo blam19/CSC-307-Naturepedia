@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import {Bar} from 'react-chartjs-2';
 import {Fragment} from 'react'
-import {ButtonGroup, Button} from 'react-bootstrap'
+import {ButtonGroup, Button, DropdownButton, Dropdown} from 'react-bootstrap'
 import {Alert} from 'react'
 import { Link } from "react-router-dom";
 
-const state1 = {
+const coffee_us = {
     labels: ['2011', '2014', '2015',
              '2016', '2019'],
     datasets: [
       {
-        label: 'Organic Coffee Production (lbs)',
+        label: 'U.S. Organic Coffee Production (lbs)',
         backgroundColor: 'rgba(135, 64, 49, 0.2)',
         borderColor: 'rgba(0,0,0,1)',
         borderWidth: 2,
@@ -18,7 +18,8 @@ const state1 = {
       }
     ]
   }
-const state2 = {
+
+const cows = {
     labels: ['January', 'February', 'March',
              'April', 'May'],
     datasets: [
@@ -33,7 +34,7 @@ const state2 = {
 }
 
 const DataPage = () => {
-    const [curState, setCurState] = useState(state1)
+    const [curState, setCurState] = useState(coffee_us)
 
 
 
@@ -52,16 +53,23 @@ const DataPage = () => {
                     {/* <button>Home</button>
                     <button>FAQ</button> */}
             </div>
-            <ButtonGroup aria-label="Basic example">
-                <Button 
-                 variant="secondary"
-                 onClick={() => setCurState(state1)}>Coffee</Button>
-                <Button 
-                 variant="secondary"
-                 onClick={() => setCurState(state2)}>Cow population</Button>
-            </ButtonGroup>
-
             
+    <ButtonGroup>
+          <DropdownButton id="dropdown-basic-button" title="Coffee">
+            <Dropdown.Item onClick={() => setCurState(coffee_us)}> U.S Coffee Production</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </DropdownButton>
+
+          <DropdownButton id="dropdown-basic-button" title="Cows">
+            <Dropdown.Item onClick={() => setCurState(cows)}> Cow population</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </DropdownButton>
+
+      </ButtonGroup> 
+
+
             <Bar
                 data={curState}
                 options={{
