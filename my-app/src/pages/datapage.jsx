@@ -75,6 +75,25 @@ const honeycrisp_apple_sales_dollar = {
   ]
 }
 
+const honey_prod_lbs = {
+    labels: ['2020', '2019', '2018',
+             '2017', '2016', '2015', 
+             '2014', '2013', '2012', 
+             '2011', '2010'],
+    datasets: [
+      {
+        label: 'US Honey Production in Pounds',
+        backgroundColor: 'rgba(75,192,192,1)',
+        borderColor: 'rgba(0,0,0,1)',
+        borderWidth: 2,
+        data: [147594000, 156922000, 154008000,
+               149025000, 162246000, 156705000, 
+               178310000, 149550000, 142296000, 
+               148357000 ]
+      }
+    ]
+}
+
 const DataPage = () => {
     const [curState, setCurState] = useState(coffee_us)
 
@@ -113,6 +132,11 @@ const DataPage = () => {
             <Dropdown.Item onClick={() => setCurState(braeburn_apple_sales_dollar)}> U.S. Organic Braeburn Apple Sales in Dollars</Dropdown.Item>
             <Dropdown.Item onClick={() => setCurState(fuji_apple_sales_dollar)}> U.S. Organic Fuji Apple Sales in Dollars </Dropdown.Item>
             <Dropdown.Item onClick={() => setCurState(honeycrisp_apple_sales_dollar)}> U.S. Organic Honeycrisp Apple Sales in Dollars </Dropdown.Item>
+          </DropdownButton>
+          <DropdownButton id="dropdown-basic-button" title="Honey">
+            <Dropdown.Item onClick={() => setCurState(honey_prod_lbs)}> Honey Production Lbs</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Honey Production Lbs per Colony</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Colony Loss per Year</Dropdown.Item>
           </DropdownButton>
 
       </ButtonGroup> 
